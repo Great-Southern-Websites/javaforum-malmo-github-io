@@ -372,8 +372,10 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 0; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer li { margin: 0; }
 .site-footer li a { display: inline-flex; align-items: center; min-height: 2.75rem; min-width: 2.75rem; padding-right: 0.75rem; text-decoration: none; }
-.footer-bottom { border-top: 1px solid var(--line); padding-block: 1rem; font-family: var(--font-mono); font-size: 0.78rem; color: var(--fg-muted); }
+.footer-bottom { border-top: 1px solid var(--line); padding-block: 1rem; font-family: var(--font-mono); font-size: 0.78rem; color: var(--fg-muted); display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; justify-content: space-between; align-items: center; }
 .footer-bottom p { margin: 0; }
+.footer-bottom a { display: inline-flex; align-items: center; min-height: 2.75rem; color: var(--fg-muted); text-decoration: none; }
+.footer-bottom a:hover { color: var(--primary); }
 
 /* ---- theme toggle -------------------------------------------------------------- */
 .theme-toggle { position: fixed; right: 1rem; bottom: 1rem; z-index: 30; width: 2.9rem; height: 2.9rem; border-radius: var(--radius); border: 1px solid var(--line); background: var(--bg-card); color: var(--fg); display: grid; place-items: center; cursor: pointer; }
