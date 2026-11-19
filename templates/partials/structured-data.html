@@ -1,35 +1,38 @@
 {@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
-<!-- Structured data for search engines (schema.org). BUILDER: fill every field
-     from the business's own details; delete keys you have no real value for.
-     Keep it accurate when contact details, hours or locations change. -->
+<!-- Structured data for search engines (schema.org). Filled from the group's own
+     details; keep it accurate when links or the organiser change. -->
 <script type="application/ld+json">
 {|{
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "|}{=site.url.absolute}{|#business",
+  "@type": "Organization",
+  "@id": "|}{=site.url.absolute}{|#organization",
   "name": "Javaforum Malmö",
+  "alternateName": "Malmö Java User Group",
   "url": "|}{=site.url.absolute}{|",
   "logo": "|}{=site.url('images/logo.png').absolute}{|",
-  "image": "|}{=site.url('images/logo.png').absolute}{|",
-  "description": "BUILDER: one sentence, the same as the home page description.",
-  "telephone": "+61 3 0000 0000",
-  "email": "hello@example.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "1 Example Street",
-    "addressLocality": "Suburb",
-    "addressRegion": "VIC",
-    "postalCode": "3000",
-    "addressCountry": "AU"
+  "image": "|}{=site.url('images/javaforum-malmo.png').absolute}{|",
+  "description": "Javaforum Malmö is the Java User Group in Malmö, Sweden, meeting about once a quarter with local and international Java speakers.",
+  "location": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Malmö",
+      "addressCountry": "SE"
+    }
   },
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" }
-  ],
-  "sameAs": [],
-  "potentialAction": {
-    "@type": "ReserveAction",
-    "name": "Book",
-    "target": "|}{=site.url('contact').absolute}{|"
-  }
+  "member": {
+    "@type": "Person",
+    "name": "Ivar Grimstad",
+    "jobTitle": "Organiser",
+    "sameAs": "https://www.linkedin.com/in/ivargrimstad/"
+  },
+  "sameAs": [
+    "https://bsky.app/profile/javaforum.bsky.social",
+    "https://x.com/javaforum",
+    "https://www.linkedin.com/groups/128453/",
+    "https://www.eventbrite.com/o/javaforum-malmo-121214358292",
+    "https://github.com/javaforum-malmo",
+    "https://groups.google.com/g/javaforum-malmo"
+  ]
 }|}
 </script>

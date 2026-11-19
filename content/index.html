@@ -1,15 +1,116 @@
 ---
-title: "Home"
-description: "BUILDER: one-sentence description of the business for search engines."
-image: logo.png
+title: "Javaforum Malmö"
+description: "Javaforum Malmö is the Java User Group in Malmö, Sweden, meeting about once a quarter with local and international Java speakers."
+image: javaforum-malmo.png
 layout: default
 ---
-<!-- BUILDER: hero, then the sections that mirror the original home page. -->
 <section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Malmö Java User Group</p>
+      <h1>Javaforum Malmö is the Java User Group in Malmö, Sweden.</h1>
+      <p class="lead">The goal is to arrange a physical meetup with local and international speakers once every quarter.</p>
+      <p class="actions">
+        <a class="btn btn-primary" href="https://groups.google.com/g/javaforum-malmo">Join the mailing list</a>
+        <a class="btn btn-outline" href="https://join.slack.com/t/javaforum-sweden/shared_invite/zt-bvmaqxjp-qsWdnyJgDEtWXAYKZwruXg">Join the Slack workspace</a>
+      </p>
+    </div>
+    <aside class="board" aria-labelledby="board-title">
+      <div class="board-head">
+        <p class="label" id="board-title">Noticeboard</p>
+        <a href="{=site.url('events')}">Upcoming and past events</a>
+      </div>
+      <div class="board-note">
+        <p>No upcoming events at the moment. Check back soon.</p>
+      </div>
+      <ul class="board-list">
+        <li>
+          <a class="ticket" href="{=site.url('events')}#augmenting-ai-with-the-power-of-jakarta-ee">
+            <span class="stamp"><span class="day">20</span><span class="month">May 2026</span></span>
+            <span><span class="ticket-title">Augmenting AI with the Power of Jakarta EE</span><span class="ticket-meta">Ivar Grimstad. Living IT, Malmö</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="ticket" href="{=site.url('events')}#the-reputation-formula">
+            <span class="stamp"><span class="day">10</span><span class="month">Feb 2026</span></span>
+            <span><span class="ticket-title">The Reputation Formula: Turbocharge Your Developer Career</span><span class="ticket-meta">Bruno Souza. Foo Café</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="ticket" href="{=site.url('events')}#jvm-in-the-age-of-ai">
+            <span class="stamp"><span class="day">5</span><span class="month">May 2025</span></span>
+            <span><span class="ticket-title">JVM in the Age of AI</span><span class="ticket-meta">Artur Skowronski. Foo Café</span></span>
+          </a>
+        </li>
+      </ul>
+      <div class="board-foot">
+        <p><a href="https://www.eventbrite.com/o/javaforum-malmo-121214358292">Javaforum on Eventbrite</a></p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section-alt" id="join">
   <div class="container">
-    <p class="eyebrow">Welcome</p>
-    <h1>Javaforum Malmö</h1>
-    <p class="lead">Replace this with the business's own words.</p>
-    <p class="hero-actions"><a class="btn btn-primary" href="{=site.url('contact')}">Contact us</a></p>
+    <h2>Stay in the loop</h2>
+    <div class="join">
+      <div class="join-item">
+        <p class="label">Mailing list</p>
+        <h3>Announcements for upcoming events</h3>
+        <p>Please join our mailing list so you don't miss out on announcements for upcoming events.</p>
+        <a class="btn btn-primary" href="https://groups.google.com/g/javaforum-malmo">Join the mailing list</a>
+      </div>
+      <div class="join-item">
+        <p class="label">Slack</p>
+        <h3>Connect with the local Java community</h3>
+        <p>We also have a Slack workspace for connecting with the local Java community.</p>
+        <a class="btn btn-outline" href="https://join.slack.com/t/javaforum-sweden/shared_invite/zt-bvmaqxjp-qsWdnyJgDEtWXAYKZwruXg">Join the Slack workspace</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container cols">
+    <div>
+      <h2>Organiser</h2>
+      <div class="person">
+        <p class="name"><a href="https://www.linkedin.com/in/ivargrimstad/">Ivar Grimstad</a></p>
+        <p>Reach out to me if you are interested in speaking at Javaforum Malmö.</p>
+      </div>
+    </div>
+    <div>
+      <h2>Follow us on social media</h2>
+      <ul class="link-list">
+        <li><a href="https://bsky.app/profile/javaforum.bsky.social"><span>Bluesky <small>javaforum.bsky.social</small></span></a></li>
+        <li><a href="https://x.com/javaforum"><span>X <small>@javaforum</small></span></a></li>
+        <li><a href="https://www.linkedin.com/groups/128453/"><span>LinkedIn <small>Javaforum Sweden group</small></span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Other Java User Groups</h2>
+    <div class="cols">
+      <div>
+        <h3>Sweden</h3>
+        <p>We collaborate with the Swedish Java User Groups and will be happy to set up a series of events if you wish to go on a Swedish tour.</p>
+        <ul class="link-list">
+          <li><a href="https://www.meetup.com/jforum-stockholm/">Jforum Stockholm</a></li>
+          <li><a href="https://www.meetup.com/javaforum-goteborg/">Javaforum Göteborg</a></li>
+          <li><a href="https://www.meetup.com/umejug/">Umedev Community</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>World wide</h3>
+        <p>Java User Groups everywhere, listed by Dev.java and by the world wide JUG community.</p>
+        <ul class="link-list">
+          <li><a href="https://dev.java/community/jugs/"><span>Java User Groups <small>Dev.java</small></span></a></li>
+          <li><a href="https://world-wide-jugs.github.io/GlobalWWJugs/">Worldwide list of Java User Groups</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
